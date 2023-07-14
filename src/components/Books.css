@@ -1,0 +1,13 @@
+.books-container {
+    background-color: black;
+    padding: 60px 30px 40px 20px;
+    width: 400px;
+}
+
+.books-image-container {
+    width: 400px;
+}
+
+.book-image {
+    width: 400px;
+}

@@ -1,0 +1,226 @@
+/* Estilos generales del NavBar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 72, 83, 0.8);
+  padding: 0;
+  height: 50px;
+  position: relative;
+}
+
+.logo img {
+  height: 50px;
+  margin-left: 5px;
+}
+
+.nav-items {
+  display: flex;
+  background-color: #004853;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  background-color: #004853;
+  height: 100%;
+  align-items: center;
+  animation: slideRight 1.5s;
+}
+
+.nav-item {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item:hover {
+  animation: colored 0.3s forwards;
+}
+
+.nav-item:active {
+  background-color: aqua;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #e2dcdc;
+  font-weight: bold;
+  width: 120px;
+}
+
+.nav-item a:hover {
+  color: #004853;
+  transition: 1s;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 1s;
+  animation: none;
+}
+
+.dropdown {
+  z-index: 5;
+  position: absolute;
+  right: 5px;
+  top: 52px;
+  animation: slideDown 1s;
+}
+
+
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    animation: slideRight 1.5s;
+  }
+
+  .nav-items.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #007e80;
+    padding: 0;
+    animation-name: slideDown, opacity;
+    animation-duration: 1s;
+    z-index: 3;
+  }
+
+  .nav-item {
+    height: 30px;
+    width: 100%;
+  }
+
+  .nav-item a {
+    width: 100%;
+  }
+
+  .nav-item .a1 {
+    animation: slideLeft 1s;
+    width: 100%;
+  }
+
+  .nav-item .a2 {
+    animation: slideLeft 1.5s;
+  }
+
+  .nav-item .a3 {
+    animation: slideLeft 2s;
+  }
+
+  .nav-item:hover {
+    background-color: #04d4d8;
+    transition: 2s;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 185, 189, 0.6);
+    height: 90px;
+    width: 100%;
+    animation: none;
+  }
+ 
+  .menu-icon-close {
+    animation: reduce 2s;
+  }
+
+  .menu-icon-open {
+    animation: rotate 2s;
+  }
+
+  .dropdown {
+    animation: none;
+    position: absolute;
+    top: 142px;
+    right: 10px;
+  }
+   
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-51px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(768px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes reduce {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes colored {
+  0% {
+    background-color: #004853;
+  }
+  50% {
+    background-color: rgb(0, 185, 189, 0.7);
+  }
+  100% {
+    background-color: #00b9bd;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
