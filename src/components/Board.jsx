@@ -34,7 +34,7 @@ export const Board = () => {
     infinite: true,
     speed: 2000,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   }
   return (
     <div className="board-container">
@@ -55,7 +55,7 @@ export const Board = () => {
             <img src={cero} alt="cero" />
           </div>
           <div className='slider-image-container'>
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className='image'/>
           </div>
         </Slider>
       </div>

@@ -8,19 +8,17 @@
 #fa0e9c fucsia más claro
 */
 
-
-
 .board-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
   padding-top: 60px;
   width: 100%;
   gap: 10px;
-  background-color: black;
-  color: aliceblue;
+  background-color: rgb(221, 205, 205);
+  color:#004853 ;
 }
 
 .board-content-container {
@@ -29,10 +27,11 @@
   width: 65%;
   animation: slideDown 2s;
   text-align: justify;
+  padding-right: 30px;
 }
 
 .button-container {
-  background-color: #e30075;
+  background-color: orange;
 }
 
 .add-button {
@@ -43,7 +42,7 @@
   padding: 5px 5px 5px 10px;
   width: 130px;
   height: 35px;
-  background-color: #e30075;
+  background-color: orange;
   margin: 30px 10px 10px auto;
   transition: 0.1s;
   color: aliceblue;
@@ -51,7 +50,7 @@
 }
 
 .add-button:hover {
-  background-color: #fa0e9c;
+  background-color: rgb(255, 92, 32);
 }
 
 .add-button:active {
@@ -75,6 +74,8 @@
   animation: slideLeft 1.5s;
 }
 
+
+
 @media (max-width: 768px) {
 
   .board-container {
@@ -82,15 +83,18 @@
   }
 
   .board-content-container {
-    width: 80%;
+    width: 90%;
     animation: slideDown 1s;
+    padding-right: 10px;
   }
 
+
   .board-slider-container {
-    width: 80%;
+    width: 70%;
     margin-bottom: 20px;
     animation: slideDown 2s;
   }
+
 
 }
 

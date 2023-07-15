@@ -8,6 +8,7 @@ import { useState } from "react";
 import menuOpenIcon from "../assets/menuOpenIcon.svg";
 import menuCloseIcon from "../assets/menuCloseIcon.svg";
 import logo from "../assets/logo.png";
+import down from '../assets/down.svg'
 
 //components
 import Dropdown from "./DropDown";
@@ -63,7 +64,8 @@ const NavBar = () => {
               onClick={handleDropdown}
               >
               Item 3
-            </a>
+              <img src={down} alt="down" className='item3Icon'/>
+            </a>  
           </li>
         </ul>
       </div>

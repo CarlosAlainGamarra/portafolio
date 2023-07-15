@@ -1,0 +1,58 @@
+.bookcard-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(221, 205, 205);
+    padding: 30px;
+    gap: 20px;
+}
+
+.bookcard-image-container {
+    width: 30%;
+}
+
+.bookcard-image {
+    box-shadow: 4px 2px 0px rgba(0,0,0,0.75)
+}
+
+.bookcard-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 70%;
+    overflow: hidden;
+}
+
+.bookcard-content {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.bookcard-categories-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    bottom: 20px;
+}
+
+.bookcard-categorie {
+    background-color: orange;
+    padding: 2px 5px;
+    border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+    .bookcard-container {
+        flex-direction: column;
+    }
+
+    .bookcard-content-container {
+        width: 90%;
+    }
+
+    .bookcard-image-container {
+        width: 90%;
+    }
+}

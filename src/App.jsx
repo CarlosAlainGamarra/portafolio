@@ -2,15 +2,17 @@
 import NavBar from "./components/NavBar";
 import Board from "./components/Board";
 import Footer from "./components/Footer";
-import Me from "./components/Me";
-//import Books from "./components/Books";
+import BookCard from "./components/BookCard";
+import Author from "./components/Author";
+
 
 export const App = () => {
   return (
     <div>
       <NavBar />
       <Board />
-      <Me />
+      <BookCard />
+      <Author />
       <Footer />
     </div>
   );
