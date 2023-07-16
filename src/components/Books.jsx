@@ -1,58 +1,49 @@
 //Styles
-import './Books.css'
+import "./Books.css";
 
 //Assets
-import cero from '../assets/cero.png'
+import { books } from "../content/content";
 
 //Slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-export const Books= () => {
-    //Slide settings
-    const settings = {
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 2000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      cssEase: 'linear'
-    }
-
+export const Books = () => {
+  //Slide settings
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
 
   return (
     <div className='books-container'>
-      <Slider {...settings}>
-        <div className='books-image-container'>
-          <img src={cero} alt="cero" className='book-image'/>
-        </div>
-
-        <div className='books-image-container'>
-          <img src={cero} alt="cero" className='book-image'/>
-        </div>
-
-        <div className='books-image-container'>
-          <img src={cero} alt="cero" className='book-image'/>
-        </div>
-
-        <div className='books-image-container'>
-          <img src={cero} alt="cero" className='book-image'/>
-        </div>
-
-        <div className='books-image-container'>
-          <img src={cero} alt="cero" className='book-image'/>
-        </div>
-
-        <div className='books-image-container'>
-          <img src={cero} alt="cero" className='book-image'/>
-        </div>
-      </Slider>
+      <ul>
+        <Slider {...settings}>
+          {books.map((book) => (
+            <a href='#' key={book.id}>
+              <li>
+                <div className='books-image-container'>
+                  <img
+                    src={book.cover}
+                    alt={book.title}
+                    className='book-image'
+                  />
+                </div>
+              </li>
+            </a>
+          ))}
+        </Slider>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Books
+export default Books;

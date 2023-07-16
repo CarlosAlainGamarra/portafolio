@@ -1,13 +1,26 @@
 .books-container {
-    background-color: black;
-    padding: 60px 30px 40px 20px;
-    width: 400px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(221,205,205,1) 90%);
+    padding: 60px 30px 40px 30px;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
 }
 
 .books-image-container {
-    width: 400px;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .book-image {
-    width: 400px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+
+  
+    .book-image {
+        width: 400px;
+        height: auto;
+    }
 }

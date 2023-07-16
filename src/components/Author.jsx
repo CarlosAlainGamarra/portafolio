@@ -12,6 +12,7 @@ import { authorContent } from '../content/content'
 //Hooks
 import { useRef } from 'react'
 
+
 export const Author = () => {
     const scrollArticle = useRef(null)
 
@@ -22,7 +23,8 @@ export const Author = () => {
       const handleScrollDown = () => {
         scrollArticle.current.scrollTop += 100;
       };
-    
+
+ 
   return (
     <div className="author-container">
         <div className="author-content">

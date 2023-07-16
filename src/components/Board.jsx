@@ -2,10 +2,9 @@
 import './Board.css'
 
 //Assets
-import cero from '../assets/cero.png'
-import logo from '../assets/logo.png'
 import add from '../assets/add.svg'
 import drop from '../assets/drop.svg'
+import { books } from '../content/content'
 
 //Slider
 import "slick-carousel/slick/slick.css";
@@ -52,10 +51,10 @@ export const Board = () => {
       <div className='board-slider-container'>
         <Slider {...settings}>
           <div className='slider-image-container'>
-            <img src={cero} alt="cero" />
+            <img src={books[0].cover} alt={books[0].title} />
           </div>
           <div className='slider-image-container'>
-            <img src={logo} alt="logo" className='image'/>
+            <img src={books[1].cover} alt={books[1].title} className='image'/>
           </div>
         </Slider>
       </div>

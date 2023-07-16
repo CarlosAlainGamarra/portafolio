@@ -2,21 +2,21 @@
 import './BookCard.css'
 
 //Assets
-import cero from '../assets/cero.png'
+//import cero from '../assets/cero.png'
 
 //Content
-import { cardInfo } from '../content/content.js'
+import { books } from '../content/content'
 
 export const BookCard = () => {
   return (
     <div className="bookcard-container">
         <div className="bookcard-image-container">
-            <img src={cero} alt="cero" className='bookcard-image'/>
+            <img src={books[1].cover} alt={books[1].title} className='bookcard-image'/>
         </div>
         <div className="bookcard-content-container">
             <div className="bookcard-content">
-                <h2>Title</h2>
-                <p>{cardInfo}</p>
+                <h2>comming soon</h2>
+                <p>{books[1].info}</p>
             </div>
             <div className="bookcard-categories-container">
                 <span className='bookcard-categorie'>mosterio</span>

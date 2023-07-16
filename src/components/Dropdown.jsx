@@ -7,16 +7,16 @@ export const Dropdown = () => {
     <div className="dropdown-container" id='box'>
       <ul className="dropdown-list">
         <li className="dropdown-item a1">
-          <a href="#">op</a>
+          <a href="#">FELIKA</a>
         </li>
         <li className="dropdown-item a2">
-          <a href="#">op</a>
+          <a href="#">ESTACIONES</a>
         </li>
         <li className="dropdown-item a3">
-          <a href="#">op</a>
+          <a href="#">RELATOS</a>
         </li>
         <li className="dropdown-item a4">
-          <a href="#">op</a>
+          <a href="#">EXTRAS</a>
         </li>
       </ul>
     </div> 

@@ -4,6 +4,7 @@ import Board from "./components/Board";
 import Footer from "./components/Footer";
 import BookCard from "./components/BookCard";
 import Author from "./components/Author";
+import Books from "./components/Books";
 
 
 export const App = () => {
@@ -12,6 +13,7 @@ export const App = () => {
       <NavBar />
       <Board />
       <BookCard />
+      <Books />
       <Author />
       <Footer />
     </div>

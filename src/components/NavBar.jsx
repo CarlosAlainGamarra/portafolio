@@ -11,7 +11,7 @@ import logo from "../assets/logo.png";
 import down from '../assets/down.svg'
 
 //components
-import Dropdown from "./DropDown";
+import Dropdown from "./Dropdown";
 
 
 
@@ -49,12 +49,12 @@ const NavBar = () => {
         <ul className='nav-list'>
           <li className='nav-item'>
             <a href='#' className='a1'>
-              Item 1
+              Pop-C
             </a>
           </li>
           <li className='nav-item'>
             <a href='#' className='a2'>
-              Item 2
+              Feliverso
             </a>
           </li>
           <li className='nav-item'>
@@ -63,7 +63,7 @@ const NavBar = () => {
               className='a3' 
               onClick={handleDropdown}
               >
-              Item 3
+              Historias
               <img src={down} alt="down" className='item3Icon'/>
             </a>  
           </li>
