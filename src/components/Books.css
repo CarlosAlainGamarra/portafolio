@@ -16,11 +16,29 @@
     height: 300px;
 }
 
-@media (max-width: 768px) {
+.lista2 {
+    display: none;
+}
 
-  
+@media (max-width: 768px) {
+    .lista1 {
+        display: none;
+    }
+
+    .lista2 {
+        display: block;
+    }
+    
+    .books-container {
+        height: fit-content;
+    }
+
+    .books-image-container {
+        height: fit-content;
+    }
+
     .book-image {
-        width: 400px;
-        height: auto;
+        height: 450px;
+        width: auto;
     }
 }

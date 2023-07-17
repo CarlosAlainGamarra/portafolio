@@ -4,14 +4,27 @@ import "./Books.css";
 //Assets
 import { books } from "../content/content";
 
+//hooks
+import { useState } from "react";
+
 //Slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+import ModalBook from "../components/ModalBook";
+
 export const Books = () => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const [book, setBook] = useState("");
+  const handleModal = (e) => {
+    setOpenModal(!openModal);
+    setBook(books[e.currentTarget.parentNode.firstChild.getAttribute("id")]);
+  };
+
   //Slide settings
-  const settings = {
+  const settings1 = {
     dots: false,
     arrows: false,
     infinite: true,
@@ -23,26 +36,59 @@ export const Books = () => {
     cssEase: "linear",
   };
 
+  const settings2 = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+
   return (
-    <div className='books-container'>
-      <ul>
-        <Slider {...settings}>
-          {books.map((book) => (
-            <a href='#' key={book.id}>
-              <li>
+    <>
+      <div className='books-container'>
+        <ul className='lista1'>
+          <Slider {...settings1}>
+            {books.map((book) => (
+              <li key={book.id} onClick={handleModal} id={book.id}>
                 <div className='books-image-container'>
                   <img
                     src={book.cover}
                     alt={book.title}
                     className='book-image'
                   />
+                  {book.title}
                 </div>
               </li>
-            </a>
-          ))}
-        </Slider>
-      </ul>
-    </div>
+            ))}
+          </Slider>
+        </ul>
+
+        <ul className='lista2'>
+          <Slider {...settings2}>
+            {books.map((book) => (
+              <a href='#' key={book.id}>
+                <li>
+                  <div className='books-image-container'>
+                    <img
+                      src={book.cover}
+                      alt={book.title}
+                      className='book-image'
+                    />
+                  </div>
+                </li>
+              </a>
+            ))}
+          </Slider>
+        </ul>
+      </div>
+
+      {openModal ? <ModalBook book={book} /> : ""}
+    </>
   );
 };
 

@@ -1,21 +1,20 @@
 //Components
-import NavBar from "./components/NavBar";
-import Board from "./components/Board";
-import Footer from "./components/Footer";
-import BookCard from "./components/BookCard";
-import Author from "./components/Author";
-import Books from "./components/Books";
+import { Index } from "./Index";
+import ModalBook from "./components/ModalBook";
+import ReadBook from "./components/ReadBook";
+
+//Router
+import { Routes, Route } from "react-router-dom";
 
 
 export const App = () => {
   return (
     <div>
-      <NavBar />
-      <Board />
-      <BookCard />
-      <Books />
-      <Author />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Index />} />
+        <Route path='/book' element={<ReadBook />} />
+        <Route path='/modal' element={<ModalBook />} />
+      </Routes>
     </div>
   );
 };

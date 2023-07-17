@@ -1,6 +1,9 @@
 //Styles
 import "./NavBar.css";
 
+//Router
+import { Link } from "react-router-dom";
+
 //Hooks
 import { useState } from "react";
 
@@ -48,9 +51,9 @@ const NavBar = () => {
       <div className={`nav-items ${menuOpen ? "open" : ""}`}>
         <ul className='nav-list'>
           <li className='nav-item'>
-            <a href='#' className='a1'>
+            <Link to='/book' className='a1'>
               Pop-C
-            </a>
+            </Link>
           </li>
           <li className='nav-item'>
             <a href='#' className='a2'>
