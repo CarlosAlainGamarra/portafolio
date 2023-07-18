@@ -1,8 +1,9 @@
 //Styles
 import './BookCard.css'
 
-//Assets
-//import cero from '../assets/cero.png'
+//Router
+import { Link } from 'react-router-dom'
+
 
 //Content
 import { books } from '../content/content'
@@ -19,9 +20,9 @@ export const BookCard = () => {
                 <p>{books[1].info}</p>
             </div>
             <div className="bookcard-categories-container">
-                <span className='bookcard-categorie'>mosterio</span>
-                <span className='bookcard-categorie'>acción</span>
-                <span className='bookcard-categorie'>deportes</span>
+            <Link to={`/book/${books[1].id}`}>
+              <div className='bookcard-button'>Leer</div>
+            </Link>
             </div>
         </div>
     </div>

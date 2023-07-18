@@ -51,12 +51,12 @@ const NavBar = () => {
       <div className={`nav-items ${menuOpen ? "open" : ""}`}>
         <ul className='nav-list'>
           <li className='nav-item'>
-            <Link to='/book' className='a1'>
+            <Link to='/popculture' className='a1'>
               Pop-C
             </Link>
           </li>
           <li className='nav-item'>
-            <a href='#' className='a2'>
+            <a href='https://cgprojectsfelika.web.app/' className='a2' rel="noreferrer" target="_blank">
               Feliverso
             </a>
           </li>

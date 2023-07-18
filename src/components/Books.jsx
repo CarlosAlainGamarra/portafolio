@@ -20,7 +20,7 @@ export const Books = () => {
   const [book, setBook] = useState("");
   const handleModal = (e) => {
     setOpenModal(!openModal);
-    setBook(books[e.currentTarget.parentNode.firstChild.getAttribute("id")]);
+    setBook(books[e.currentTarget.parentNode.firstChild.getAttribute("id")-1]);
   };
 
   //Slide settings
@@ -72,7 +72,7 @@ export const Books = () => {
           <Slider {...settings2}>
             {books.map((book) => (
               <a href='#' key={book.id}>
-                <li>
+                <li key={book.id} onClick={handleModal} id={book.id}>
                   <div className='books-image-container'>
                     <img
                       src={book.cover}
@@ -87,7 +87,7 @@ export const Books = () => {
         </ul>
       </div>
 
-      {openModal ? <ModalBook book={book} /> : ""}
+      {openModal ? <ModalBook book={book} closeModal={handleModal}/> : ""}
     </>
   );
 };

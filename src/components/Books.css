@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: space-between;
     height: 500px;
+    color: aliceblue;
+    position: relative;
+    
 }
 
 .books-image-container {
@@ -14,6 +17,7 @@
 
 .book-image {
     height: 300px;
+    cursor: pointer;
 }
 
 .lista2 {

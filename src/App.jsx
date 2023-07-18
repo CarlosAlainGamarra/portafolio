@@ -1,6 +1,7 @@
 //Components
 import { Index } from "./Index";
 import ModalBook from "./components/ModalBook";
+import PopC from "./components/PopC";
 import ReadBook from "./components/ReadBook";
 
 //Router
@@ -12,8 +13,9 @@ export const App = () => {
     <div>
       <Routes>
         <Route path='/' element={<Index />} />
-        <Route path='/book' element={<ReadBook />} />
+        <Route path='/book/:id' element={<ReadBook />} />
         <Route path='/modal' element={<ModalBook />} />
+        <Route path='/popculture' element={<PopC />} />
       </Routes>
     </div>
   );

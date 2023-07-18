@@ -23,37 +23,44 @@ export const books = [
         id: 1,
         title: "Felika",
         cover: felika,
+        tags: ["fantasía", "Acción",]
     },
     {
         id :2,
         title: "Felika-Gaiden",
         cover: felikaGaiden,
-        info: cardInfo
+        info: cardInfo,
+        tags: ["fantasía", "Acción", "Drama",]
     },
     {
         id:3,
         title: "Otoño",
         cover: otono,
+        tags: ["Misterio", "Drama", "Suspenso"]
     },
     {
         id:4,
         title: "Invierno",
         cover: invierno,
+        tags: ["Misterio", "Drama", "Suspenso"]
     },
     {
         id:5,
         title: "Ëpica Batalla En El Cólegio",
         cover: epica,
+        tags: ["Fantasía", "Acción", "Epopeya", "Beat em up"]
     },
     {
         id:6,
         title: "Ellxs",
         cover: ellxs,
+        tags: ["Distopía", "Acción"]
     },
     {
         id:7,
         title: "Contra Mí",
         cover: contraMi,
+        tags: ["Distopía", "Acción", "Beat em up"]
     },
         
 ]
