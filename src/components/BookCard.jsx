@@ -16,7 +16,7 @@ export const BookCard = () => {
         </div>
         <div className="bookcard-content-container">
             <div className="bookcard-content">
-                <h2>comming soon</h2>
+                <div className='soon'>—ESTRENO!</div>
                 <p>{books[1].info}</p>
             </div>
             <div className="bookcard-categories-container">

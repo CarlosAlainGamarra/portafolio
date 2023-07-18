@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 export const PopC = () => {
   return (
     <div className="Pop-C-container">
-        Im working on this
+        Sorry. I'm working on this.
         <img src={underConstruction} alt="under construction" />
         <Link to='/'>← Home</Link>
     </div>

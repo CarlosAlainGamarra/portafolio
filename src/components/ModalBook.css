@@ -28,6 +28,15 @@
     z-index: 9999;
 }
 
+.modal-content-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal-content {
+    margin: 10px 10px 0 0;
+}
+
 
 .modal-image-container {
     width: 35%;

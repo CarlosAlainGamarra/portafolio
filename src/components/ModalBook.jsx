@@ -19,7 +19,8 @@ export const ModalBook = ({ book, closeModal }) => {
             <img src={book.cover} alt={book.title} />
           </div>
           <div className='modal-content-container'>
-            <div className='modal-content'>{book.title}</div>
+            <div className='modal-content-title'>{book.title}</div>
+            <div className='modal-content'>{book.description}</div>
             <div className='modal-categories-container'>
               {book.tags.map((tags) => (
                 <div className='modal-category' key={book.id}>
