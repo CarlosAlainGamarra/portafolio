@@ -14,6 +14,16 @@ nav {
   margin-left: 5px;
 }
 
+.nav-cart {
+  width: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.nav-cart2 {
+  display: none;
+}
+
 .nav-items {
   display: flex;
   background-color: black;
@@ -29,6 +39,7 @@ nav {
   height: 100%;
   align-items: center;
   animation: slideRight 1.5s;
+  right: 0;
 }
 
 .nav-item {
@@ -93,6 +104,20 @@ nav {
 @media (max-width: 768px) {
   .nav-items {
     display: none;
+  }
+
+  .nav-cart {
+    display: none;
+  }
+
+  .nav-cart2 {
+    display: block;
+    width: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
   }
 
   .menu-toggle {

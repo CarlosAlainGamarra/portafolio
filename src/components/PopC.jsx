@@ -12,7 +12,7 @@ export const PopC = () => {
     <div className="Pop-C-container">
         Sorry. I'm working on this.
         <img src={underConstruction} alt="under construction" />
-        <Link to='/'>← Home</Link>
+        <Link to='/main'>← Home</Link>
     </div>
   )
 }

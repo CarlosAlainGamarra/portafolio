@@ -76,7 +76,7 @@
     margin-top: 15px;
     width: 130px;
     height: 35px;
-    background-color: orange;
+    background-color: #ffa500;
     transition: 0.1s;
     color: aliceblue;
     font-weight: bold;
@@ -103,6 +103,7 @@
 
 @media (max-width: 768px) {
     .modal-container {
+        height: 90%;
         width: 90%;
         flex-direction: column;
         left: 50%;
@@ -110,14 +111,27 @@
         top: 50%;
         transform: translate(0, -50%);
         z-index: 9999;
+        padding: 5px;
+        overflow-y: auto;
+    }
+
+    .modal-content-container {
+        padding: 5px;
+        margin: 5px;
     }
 
     .modal-image-container {
-        width: 50%;
+        width: 40%;
         margin-bottom: 10px;
     }
 
     .modal-categories-container {
         display: none;
     }
+
+    .modal-button {
+        position: relative;
+        bottom: 10px;
+    }
+
 }

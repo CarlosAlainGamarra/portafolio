@@ -7,7 +7,7 @@ export const cardInfo = "Una tarde vuelves a casa agotada por la clase de gimnas
 
 
 //Author
-export const authorContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo corrupti excepturi dignissimos magni porro provident quos libero quo, minus quaerat culpa error harum labore nihil ad, commodi odio nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nisi sed ut eius cum optio deleniti nobis architecto eos eveniet, perferendis dignissimos reprehenderit, necessitatibus quasi veniam corporis cumque sint inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dolorum sed iste nihil nulla accusantium vitae provident aliquid, ducimus ipsam ad est, impedit aperiam nesciunt? Molestiae hic cum ullam.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero minima ratione voluptas nostrum. Molestias facere vero sint ducimus atque magni magnam natus maiores excepturi inx, explicabo a, iusto labore perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui odit dolores, totam sit temporibus exercitationem, itaque amet ducimus optio libero esse incidunt nobis pariatur? Veniam ut exercitationem quas aliquam eos.'
+export const authorContent = 'Yo sólo quería escribir. En el camino han pasado un montón de cosas, algunas buenas, algunas malas, algunas peores. Es difícil escribir durante las peores. Carezco de la templanza necesaria para enfocarme en lo que está fuera de la realidad mientras la realidad está a punto de estallar. Admiro a aquellos que han logrado sacar sus mejores líneas en medio de la adversidad, aunque algo me dice que esas mejores líneas son producto de un par de buenas líneas. Por mi parte, haciendo lo que me gusta mientras me he sentido a gusto, he logrado sacar adelante algunas historias que, prefiero creer, pueden resultar más o menos entretenidas. El mundo está hecho de muchas pretenciones y de pocos compromisos, por eso no pretendo comprometerme con nada. Escribo porque quiero y porque de vez en cuando puedo.'
 
 
 import otono from '../assets/otono.png'
@@ -22,7 +22,7 @@ export const books = [
     {
         id: 1,
         title: "Felika",
-        Author: "Alain Gamarov",
+        author: "Alain Gamarov",
         cover: felika,
         tags: ["fantasía", "Acción",],
         description: "El 17 de Julio de 2003 la muerte envió a su primer emisario a destruirlo todo, a borrarnos de la historia. Ante la amenaza, la vida inmediatamente responde en conformidad. Djibril muere en batalla, llevándose consigo al espíritu asesino y dejándonos un año de maniobra para prepararnos ante la próxima embestida. Hemos prevalecido y aún hay esperanza. Desafortunadamente, la vida me ha elegido para defender a una especie que no se entiende a sí misma.",
@@ -30,7 +30,7 @@ export const books = [
     {
         id :2,
         title: "Felika-Gaiden",
-        Author: "Alain Gamarov",
+        author: "Alain Gamarov",
         cover: felikaGaiden,
         info: cardInfo,
         tags: ["fantasía", "Acción", "Drama",],
@@ -39,7 +39,7 @@ export const books = [
     {
         id:3,
         title: "Otoño",
-        Author: "Alain Gamarov",
+        author: "Alain Gamarov",
         cover: otono,
         tags: ["Misterio", "Drama", "Suspenso"],
         description: "Una tarde de otoño, mientras sacaba a pasear a su perro, María descubre los cadáveres de los miembros del equipo de natación. El pequeño pueblo se encuentra conmovido por el terrible suceso, finalmente catalogado como suicidio colectivo, sin embargo, nadie parece poner reparo en el quinto miembro del equipo, Thiago Odreman, que se encuentra desaparecido. Sobreviviente o asesino, esta pequeña comunidad se enbarcará en una busqueda fratricida por la verdad de Thiago."
@@ -47,7 +47,7 @@ export const books = [
     {
         id:4,
         title: "Invierno",
-        Author: "Alain Gamarov",
+        author: "Alain Gamarov",
         cover: invierno,
         tags: ["Misterio", "Drama", "Suspenso"],
         description: "Los acontecimientos del otoño han dejado heridas sin sicatrizar. Lo que fuera un pueblo pacifico y ejemplar, se ha convertido en un hervidero de bandas y vengadores. Con una guerra en ciernes, María aún tiene mucho por descubrir. No todo es lo que parece y cualquier paso en falso podría desencadenar la violencia generalizada."
@@ -55,7 +55,7 @@ export const books = [
     {
         id:5,
         title: "Épica Batalla En El Colegio",
-        Author: "Alain Gamarov",
+        author: "Alain Gamarov",
         cover: epica,
         tags: ["Fantasía", "Acción", "Epopeya", "Beat em up"],
         description: "Axel ha recibido la mejor noticia de su vida: la dulce Avril Larousse ha aceptado desayunar con él durante el recreo. Su alegría es efímera, pues ese mismo día ha sido retado a tres combates legendarios. ¿Podrá Axel derrotar a todos su enemigos antes de que suene la campana? ¿Esperará Avril por él?"
@@ -63,7 +63,7 @@ export const books = [
     {
         id:6,
         title: "Ellxs",
-        Author: "Ciri Lestany",
+        author: "Ciri Lestany",
         cover: ellxs,
         tags: ["Distopía", "Acción"],
         description: "Equiz Spano ha sido liberado. Cinco años de reformación deberían bastar para convertir a un terrible criminal de odio en un elemento cuanto menos tolerable dentro de la <<Munda Nueva>>. Su delito: llamar gorda a su esposa; su condena: ser execrado de por vida de la sociedad. Eso siempre y cuando las guerrillas urbanas, subversivas y desbordadas de intolerancia, no logren destruir lo que tanto esfuerzo le ha costado a la humanidad levantar."
@@ -71,7 +71,7 @@ export const books = [
     {
         id:7,
         title: "Contra Mí",
-        Author: "Ciri Lestany",
+        author: "Ciri Lestany",
         cover: contraMi,
         tags: ["Distopía", "Acción", "Beat em up"],
         description: "La presidenta de la nación ha sido asesinada en un stream. Los asesinos, influencers de oficio, la mataron durante un directo. Entraron a su baño mientras defecaba y la balearon. Se llenaron de likes y visitas, pero el pandemonium que han desatado no tiene comparación histórica. La única forma de sobrevivir es llegar al sur, y para eso hay que sortear bandas de psicópatas, saqueos, rebeldes y cazadores de hombres."

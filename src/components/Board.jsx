@@ -14,6 +14,10 @@ import Slider from "react-slick";
 //Hooks
 import { useState } from 'react';
 
+//Redux
+import { useDispatch} from 'react-redux'
+import { setProduct, unsetProduct } from '../reducers/cart/cartSlice'
+
 //Content
 import { news } from '../content/content'
 
@@ -22,8 +26,20 @@ import { news } from '../content/content'
 export const Board = () => {
   //handle Add button
   const [added, setAdded] = useState(false)
+  const dispatch = useDispatch()
+
+
   const handleAdded = () => {
     setAdded(!added)
+    {
+      dispatch(setProduct({
+          product: {
+              title: books[0].title,
+              cover: books[0].cover,
+              author: books[0].author,
+              id: books[0].id
+      }
+    }))}
   }
 
 
