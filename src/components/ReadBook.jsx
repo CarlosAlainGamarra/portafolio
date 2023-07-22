@@ -24,7 +24,7 @@ export const ReadBook = () => {
         <Link to="/main">
           <img src={home} alt="home" className="home-icon"/>
         </Link>
-      </div>
+  </div>
       <div className='content-container'>
         <div className='readbook-title'>{book.title}</div>
         <div className='content'>content</div>

@@ -4,21 +4,13 @@ import "./Card.css";
 //Assets
 import favoriteOn from "../assets/favoriteOn.svg";
 import favoriteOff from "../assets/favoriteOff.svg";
+import pdf from "../assets/pdf.png";
+import epub from "../assets/epub.png";
 
 //Hooks
-import { useState } from "react";
+import BookGrid from "./BookGrid";
 
-
-export const Card = ({ book }) => {
-  const [favorite, setFavorite] = useState(false)
-
-
-
-
-  const handleFavorite = () => {
-    setFavorite(!favorite); 
-  } 
-
+export const Card = ({ book, addFavs }) => {
   return (
     <div className='card-container'>
       <div className='card-image'>
@@ -26,13 +18,15 @@ export const Card = ({ book }) => {
       </div>
       <div className='card-title'>{book.title}</div>
       <div className='card-author'>{book.author}</div>
-      <div className='favorite' onClick={handleFavorite} id={book.id}>
-        {favorite ? (
-          <img src={favoriteOn} alt='' />
-        ) : (
-          <img src={favoriteOff} alt='' />
-        )}
-      </div>
+
+      <button id={book.title} onClick={addFavs} className='add-icon'>
+        <img
+          alt={book.cover}
+          id={book.id}
+          src={favoriteOn}
+          /*style={{ display: "none" }}*/
+        />
+      </button>
     </div>
   );
 };

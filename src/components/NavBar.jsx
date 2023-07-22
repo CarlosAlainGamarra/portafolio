@@ -17,9 +17,11 @@ import cart from "../assets/cart.png";
 //components
 import Dropdown from "./Dropdown";
 
-const NavBar = () => {
+const NavBar = ({favorites}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
+  const data = favorites
+ 
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
@@ -52,7 +54,7 @@ const NavBar = () => {
           <ul className='nav-list'>
             <li className='nav-item'>
               <Link to='/books' className='a1'>
-                Pop-C
+                Biblioteca
               </Link>
             </li>
             <li className='nav-item'>
@@ -74,14 +76,19 @@ const NavBar = () => {
             <li className='nav-cart'>
               <Link to='/cart'>
                 <img src={cart} alt='cart' />
+                <div className="cart-length">{data.length}</div>
               </Link>
+              
+              
             </li>
           </ul>
         </div>
         <div className='nav-cart2'>
               <Link to='/cart'>
                 <img src={cart} alt='cart' />
+                <div className="cart-length">{data.length}</div>
               </Link>
+              
             </div>
         <div className='menu-toggle' onClick={handleMenuToggle}>
           <img
