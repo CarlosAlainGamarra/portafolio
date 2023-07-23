@@ -49,8 +49,9 @@ export const Books = () => {
   };
 
   return (
-    <>
+    <><div className="books-title">—CATÁLOGO</div>
       <div className='books-container'>
+        
         <ul className='lista1'>
           <Slider {...settings1}>
             {books.map((book) => (

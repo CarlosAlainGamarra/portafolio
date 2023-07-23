@@ -9,6 +9,14 @@
     color: aliceblue;
 }
 
+.author-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: black;
+}
+
 .author-content {
     display: flex;
     flex-direction: column;

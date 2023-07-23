@@ -26,9 +26,29 @@
 
 .add-icon {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 15px;
     right: 15px;
     width: 30px;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.add-icon:hover {
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.cart-icon {
+    width: 30px;
+}
+
+.cart-icon:hover {
+    transform: rotate(360deg);
+    transition: 0.3s;
 }
 
 .notset {

@@ -9,6 +9,15 @@
     
 }
 
+.books-title {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 30px;
+    background-color: rgba(221,205,205,1);
+    color: #004853 ;
+
+}
+
 .books-image-container {
     height: 300px;
     align-items: center;

@@ -13,7 +13,8 @@ import { Routes, Route } from "react-router-dom";
 
 //Hooks
 import { useState, useEffect } from "react";
-
+//SweetAlert
+import Swal from "sweetalert2";
 
 export const App = () => {
   const [favorites, setFavorites] = useState([]);
@@ -49,27 +50,77 @@ export const App = () => {
       tempBooksInFavs.push(bookData);
       localStorage.setItem("favs", JSON.stringify(tempBooksInFavs));
       setFavorites(tempBooksInFavs);
-      console.log(`se agrego ${bookData.id}`);
+
+
+      //Alert
+      let timerInterval;
+      Swal.fire({
+        title: "Genial!",
+        html: `Agregaste ${bookData.title} al carrito`,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: () => {
+          Swal.showLoading();
+          const b = Swal.getHtmlContainer().querySelector("b");
+          timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft();
+          }, 100);
+        },
+        willClose: () => {
+          clearInterval(timerInterval);
+        },
+      }).then((result) => {
+        if (result.dismiss === Swal.DismissReason.timer) {
+          console.log("I was closed by the timer");
+        }
+      });
     } else {
       let booksLeft = tempBooksInFavs.filter(
         (books) => books.id !== bookData.id
       );
+
       localStorage.setItem("favs", JSON.stringify(booksLeft));
       setFavorites(booksLeft);
-      console.log(`se eliminó ${bookData.id}`);
+
+      
+      //Alert
+      let timerInterval;
+      Swal.fire({
+        title: "=(",
+        html: `Eliminaste ${bookData.title} del carrito`,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: () => {
+          Swal.showLoading();
+          const b = Swal.getHtmlContainer().querySelector("b");
+          timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft();
+          }, 100);
+        },
+        willClose: () => {
+          clearInterval(timerInterval);
+        },
+      }).then((result) => {
+        if (result.dismiss === Swal.DismissReason.timer) {
+          console.log("I was closed by the timer");
+        }
+      });
     }
   };
 
   return (
     <div>
-      <NavBar favorites={favorites}/>
+      <NavBar favorites={favorites} />
       <Routes>
         <Route path='/' element={<Wellcome />} />
         <Route path='/main' element={<Index />} />
         <Route path='/book/:id' element={<ReadBook />} />
         <Route path='/modal' element={<ModalBook />} />
         <Route path='/popculture' element={<PopC />} />
-        <Route path='/books' element={<BookGrid addFavs={addFavs} />} />
+        <Route
+          path='/books'
+          element={<BookGrid addFavs={addFavs} favorites={favorites} />}
+        />
         <Route
           path='/cart'
           element={<Cart addFavs={addFavs} favorites={favorites} />}

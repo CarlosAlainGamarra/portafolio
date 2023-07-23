@@ -3,11 +3,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #ddcdcd;
+  /*background-color: #ddcdcd;*/
   padding: 50px 30px 100px 30px;
   gap: 20px;
   position: relative;
   color: #004853;
+background: linear-gradient(0deg, rgba(221,205,205,1) 0%, rgba(0,0,0,0.2) 79%)
 }
 
 .bookcard-image-container {

@@ -2,15 +2,17 @@
 import "./Card.css";
 
 //Assets
-import favoriteOn from "../assets/favoriteOn.svg";
-import favoriteOff from "../assets/favoriteOff.svg";
-import pdf from "../assets/pdf.png";
-import epub from "../assets/epub.png";
+import cart2 from "../assets/cart2.png";
+
 
 //Hooks
 import BookGrid from "./BookGrid";
 
+
 export const Card = ({ book, addFavs }) => {
+
+
+
   return (
     <div className='card-container'>
       <div className='card-image'>
@@ -23,7 +25,8 @@ export const Card = ({ book, addFavs }) => {
         <img
           alt={book.cover}
           id={book.id}
-          src={favoriteOn}
+          src={ cart2 }
+          className="cart-icon"
           /*style={{ display: "none" }}*/
         />
       </button>

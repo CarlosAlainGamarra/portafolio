@@ -26,7 +26,10 @@ export const Author = () => {
 
  
   return (
+    <div >
+        <div className='author-title'>EDITORIAL</div>
     <div className="author-container">
+        
         <div className="author-content">
             <div onClick={handleScrollUp}>
                 <img src={up} alt="up" width={20} className='scroll-button'/>
@@ -41,7 +44,7 @@ export const Author = () => {
         </div>
         
         <img src={picture} alt="author" className="author-image"/>
-    </div>
+    </div></div>
   )
 }
 

@@ -1,5 +1,5 @@
 //Board
-export const news = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro sint at consequuntur itaque voluptatum, accusantium hic dolores culpa sed suscipit vitae debitis libero. Natus, hic. Eos commodi ipsum nihil voluptate.'
+export const news = 'A eso de las seis y cuarto comenzaron a aullar todos los perros de la ciudad. Un par de minutos después se escucharon las primeras sirenas de evacuación. Durante el año posterior al segundo encuentro me había prometido a mí misma una exposición de valentía que, llegado el momento, no fui capaz de concretar. Al irme acercando al muelle mis palabras se hicieron más cortas, hasta que mi voz terminó por apagarse. Al llegar a la zona de combate, las fuerzas de paz de la ONU me dotaron de un chaleco antibalas beige, de esos que usan para operaciones en el desierto; y un casco azul cielo con antiparras, micrófono y auricular. Un soldado raso, casi adolescente, me ayudó a ajustar el chaleco y a montar el pesado arpón en mi espalda. Miré el chaleco sobre mi anorak y pensé en lo inútil que era aquella cosa, casi tan inútil como ese llamativo casco que sólo le facilitaba al espíritu asesino conocer mi posición.'
 
 
 //BookCard
@@ -16,6 +16,7 @@ import epica from '../assets/epica.png'
 import felikaGaiden from '../assets/felikaGaiden.png'
 import ellxs from '../assets/ellxs.png'
 import felika from '../assets/felika.png'
+import felika2 from '../assets/felika2.png'
 import contraMi from '../assets/contraMi.png'
 
 export const books = [
@@ -24,6 +25,7 @@ export const books = [
         title: "Felika",
         author: "Alain Gamarov",
         cover: felika,
+        cover2: felika2,
         tags: ["fantasía", "Acción",],
         description: "El 17 de Julio de 2003 la muerte envió a su primer emisario a destruirlo todo, a borrarnos de la historia. Ante la amenaza, la vida inmediatamente responde en conformidad. Djibril muere en batalla, llevándose consigo al espíritu asesino y dejándonos un año de maniobra para prepararnos ante la próxima embestida. Hemos prevalecido y aún hay esperanza. Desafortunadamente, la vida me ha elegido para defender a una especie que no se entiende a sí misma.",
     },

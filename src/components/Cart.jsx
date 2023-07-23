@@ -12,7 +12,7 @@ import Card from "../components/Card";
 //Hooks
 import { useState, useEffect } from "react";
 
-export const Cart = ({ addFavs, favorites }) => {
+export const Cart = ({ addFavs, favorites}) => {
   const data = favorites;
 
   return (

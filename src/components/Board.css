@@ -17,8 +17,9 @@
   padding-top: 60px;
   width: 100%;
   gap: 10px;
-  background-color: #ddcdcd;
+  /*background-color: #ddcdcd;*/
   color:#004853 ;
+  background-color: #00000033;
 }
 
 .board-content-container {
@@ -28,6 +29,17 @@
   animation: slideDown 2s;
   text-align: justify;
   padding-right: 30px;
+
+}
+
+.board-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-title {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .button-container {
