@@ -60,7 +60,7 @@ export const books = [
         author: "Alain Gamarov",
         cover: epica,
         tags: ["Fantasía", "Acción", "Epopeya", "Beat em up"],
-        description: "Axel ha recibido la mejor noticia de su vida: la dulce Avril Larousse ha aceptado desayunar con él durante el recreo. Su alegría es efímera, pues ese mismo día ha sido retado a tres combates legendarios. ¿Podrá Axel derrotar a todos su enemigos antes de que suene la campana? ¿Esperará Avril por él?"
+        description: "Axel ha recibido la mejor noticia de su vida: la dulce Avril Larousse ha aceptado desayunar con él durante el recreo. Su alegría es efímera, pues ese mismo día ha sido retado a tres combates legendarios. ¿Podrá Axel derrotar a todos sus enemigos antes de que suene la campana? ¿Esperará Avril por él?"
     },
     {
         id:6,
