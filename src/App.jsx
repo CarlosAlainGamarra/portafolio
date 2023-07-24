@@ -1,12 +1,12 @@
 //Components
-import Index from "./Index";
-import Wellcome from "./Wellcome";
-import BookGrid from "./components/BookGrid";
-import Cart from "./components/Cart";
+import Index from "./Index.jsx";
+import Wellcome from "./Wellcome.jsx";
+import BookGrid from "./components/BookGrid.jsx";
+import Cart from "./components/Cart.jsx";
 import ModalBook from "./components/ModalBook";
-import PopC from "./components/PopC";
-import ReadBook from "./components/ReadBook";
-import NavBar from "./components/NavBar";
+import PopC from "./components/PopC.jsx";
+import ReadBook from "./components/ReadBook.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 //Router
 import { Routes, Route } from "react-router-dom";
